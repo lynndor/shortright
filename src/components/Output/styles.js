@@ -9,7 +9,11 @@ export default styles = StyleSheet.create({
     flexDirection: 'column',
     position: 'absolute',
     width: width - 4,
-    top: height / 2   
+    bottom: height % 2   
+  },
+  underline:{
+    borderBottomColor: '#bbb',
+    borderBottomWidth: StyleSheet.hairlineWidth
   }
 })
   

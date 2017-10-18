@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Text, Icon, Right, H3, Left, Body, Button, Center } from 'native-base';
+import { Container,View, Header, Content, Card, CardItem, Text, Icon, Right, H3, Left, Body, Button, Center } from 'native-base';
 import styles from './styles'
 class Output extends Component{
   render(){
@@ -15,9 +15,11 @@ class Output extends Component{
                 <Body>
                   <Text>Place : ssdsdasas</Text>
                   <Text>Rank</Text>
+                  <Text>Fare</Text>
                 </Body>
               </Left>
             </CardItem>
+            <View style={styles.underline}/>
             <CardItem style={styles.action}>
               <Left>
                 <Button transparent style={{flexDirection: 'column'}}>
