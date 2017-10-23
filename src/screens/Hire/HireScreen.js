@@ -14,6 +14,7 @@ import {
   ListItem
 } from "native-base";
 
+import {HireContainer} from '../../components/Hire'
 class HireScreen extends Component{
   constructor(props){
     super(props)
@@ -28,10 +29,12 @@ class HireScreen extends Component{
               </Button>
             </Left>
             <Body>
-              <Title>Hire</Title>
+              <Title>Hire Transport</Title>
             </Body>
         </Header>
-        <Text>Hire</Text>
+        <Content>
+          <HireContainer/>
+        </Content>
       </Container>
     )
   }

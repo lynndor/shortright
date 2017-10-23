@@ -8,9 +8,12 @@
 	},
 	"dependencies": {
 		"axios": "^0.16.2",
+		"moment": "^2.19.1",
+		"mongoose": "^4.12.4",
 		"native-base": "^2.3.2",
 		"react": "16.0.0-beta.5",
 		"react-native": "0.49.3",
+		"react-native-datepicker": "^1.6.0",
 		"react-native-maps": "^0.17.0",
 		"react-navigation": "^1.0.0-beta.13",
 		"react-redux": "^5.0.6",

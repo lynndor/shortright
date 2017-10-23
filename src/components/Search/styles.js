@@ -9,7 +9,6 @@ export default styles = StyleSheet.create({
     marginLeft: width / 2,
     height: 40
   },
-  input:{
-  }
+
 })
   
