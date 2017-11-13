@@ -133,7 +133,7 @@ export default {
 	footerHeight: 55,
 	footerDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
 
-	// FooterTab
+	// FooterTa
 	tabBarTextColor: platform === "ios" ? "#6b6b6b" : "#b3c7f9",
 	tabBarTextSize: platform === "ios" ? 14 : 11,
 	activeTab: platform === "ios" ? "#007aff" : "#fff",
@@ -151,7 +151,7 @@ export default {
 
 	// Header
 	toolbarBtnColor: platform === "ios" ? "#007aff" : "#fff",
-	toolbarDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
+	toolbarDefaultBg: platform === "ios" ? "#F8F8F8" : "#006064",
 	toolbarHeight: platform === "ios" ? 64 : 56,
 	toolbarIconSize: platform === "ios" ? 20 : 22,
 	toolbarSearchIconSize: platform === "ios" ? 20 : 23,
@@ -159,7 +159,7 @@ export default {
 	searchBarHeight: platform === "ios" ? 30 : 40,
 	toolbarInverseBg: "#222",
 	toolbarTextColor: platform === "ios" ? "#000" : "#fff",
-	toolbarDefaultBorder: platform === "ios" ? "#a7a6ab" : "#3F51B5",
+	toolbarDefaultBorder: platform === "ios" ? "#a7a6ab" : "#006064",
 	iosStatusbar: platform === "ios" ? "dark-content" : "light-content",
 	get statusBarColor() {
 		return color(this.toolbarDefaultBg)

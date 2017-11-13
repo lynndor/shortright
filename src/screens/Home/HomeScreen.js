@@ -15,7 +15,7 @@ import {
 } from "native-base";
 
 import Map from '../../components/Map'
-import Search from '../../components/Search'
+import Search from '../../containers/SearchContainer'
 import Output from '../../components/Output'
 // 
 class HomeScreen extends Component{
@@ -25,7 +25,9 @@ class HomeScreen extends Component{
   render(){
     return(
       <Container>
-        <Header>
+        <Header
+          
+        >
           <Left>
             <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
               <Icon
@@ -39,7 +41,7 @@ class HomeScreen extends Component{
         </Header>
         <Map/>
         <Search/>
-        <Output/>
+      
       </Container>
     )
   }

@@ -1,0 +1,20 @@
+{
+  "name": "shortright-server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lindo",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "neo4j-driver": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
