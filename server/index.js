@@ -17,14 +17,14 @@ app.use(bodyParser.json())
 
 // Get get a place where the user will get taxis to their requested destination
 app.get('/', function(req, res){
-  places.addPlace()
 })
 
 // app.get('/places', function(req, res){
 //   console.log(req)
 // })
+app.get('/cities', places.getAllCities)
 
-  app.get('/places/:destination', places.getPlace)
+app.get('/places/:from-:destination', places.getPlace)
 
 
 app.listen(PORT, function(err){

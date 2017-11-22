@@ -2,7 +2,9 @@ var placesEndPoint = require('../api/placesEndPoint')
 
 exports.getPlace = function(req, res){
   let destination = req.params.destination
-  placesEndPoint.getPlace(destination, function(results, error){
+  let from = req.params.from
+  console.log(from)
+  placesEndPoint.getPlace(from, destination, function(results, error){
     if(error){
       res.json({
         error: error
@@ -23,6 +25,21 @@ exports.addPlace = function(req, res){
       console.log(error)
     }else{
       console.log(results)
+    }
+  })
+}
+
+exports.getAllCities = function (req, res){
+  placesEndPoint.getAllCities(function(results, error){
+    if(error){
+      res.json({
+        error: error
+      })
+    }
+    else {
+      res.json({
+        results: results
+      })
     }
   })
 }

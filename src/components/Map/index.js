@@ -189,10 +189,8 @@ class Map extends Component{
   }
 
   componentWillMount() {
-    console.log()
     this.watchId = navigator.geolocation.watchPosition(
       (position) => {
-        console.log("position")
         let latlong = {
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
@@ -213,17 +211,6 @@ class Map extends Component{
       { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000, distanceFilter: 10 },
     );
 
-    // Get Location address
-    // fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.state.region.latitude},${this.state.region.longitude}&key=AIzaSyDeMwqwFs6FIaT8dntEuNjMFAOYG8CsXBg`,{
-    //   method: 'get'
-    // }).then((response) => {
-    //   if(response){
-    //     console.log(response.json())
-    //   }
-      
-    // }).catch((error) => {
-    //   console.log(error)
-    // })
   }
 
   componentWillUnmount() {

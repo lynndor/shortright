@@ -4,7 +4,7 @@ import { Container,  Header, Content, Item, Input, Icon, View } from 'native-bas
 import styles from './styles'
 class Search extends Component{
   render(){
-      const {onSetDestination, onSetCurrLocation, onQueryData} = this.props
+      const {onSetDestination, onSetCurrLocation, onQueryData, currLocationName} = this.props
     return(
       <View>
         <Item rounded style={styles.search}>
@@ -17,7 +17,7 @@ class Search extends Component{
           <Input 
             placeholder="Find your destination" 
             style={styles.input}
-            onChangeText={(text)=> onSetDestination(text)}/>
+            onChangeText={(text) => onSetDestination(text)}/>
           <Icon name="search" onPress={() => onQueryData()}/>
         </Item>
       </View>
